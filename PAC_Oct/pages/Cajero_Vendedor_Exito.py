@@ -7,7 +7,7 @@ import plotly.graph_objs as go # type: ignore
 def cargar_datos():
     try:
         # Ruta al archivo Excel
-        file_path = 'data/PAC_Oct.xlsx'
+        file_path = "PAC_Oct/data/PAC_Oct.xlsx"
         sheet_name = 'Análisis PAC'
 
         # Leer el archivo Excel y seleccionar la hoja especificada
