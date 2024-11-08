@@ -29,16 +29,6 @@ df = pd.DataFrame(data)
 st.set_page_config(page_title="Tablero de Análisis de KPIs", layout="wide")
 st.title("Tablero de Análisis de KPIs")
 
-# Insights Section
-st.subheader("Insights")
-st.write("""
-- **Mayor Crecimiento Bruto en Unidades**: Días de precios especiales Éxito, Surtimax y Súper Inter con 3,627 unidades.
-- **Menor Crecimiento Bruto en Unidades**: 20% OFF Éxito, Carulla, Éxito express, Carulla express con -524 unidades.
-- **Mayor Crecimiento Bruto (%)**: Olímpica Miércoles de Plaza con 115.63%.
-- **Menor Crecimiento Bruto (%)**: 20% OFF Éxito, Carulla, Éxito express, Carulla express con -29.69%.
-- **Crecimiento Real Monetario**: Los Días de precios especiales en Éxito, Surtimax y Super Inter tuvieron el mayor crecimiento monetario, mientras que el Cajero vendedor Éxito y Carulla Express tuvo el menor.
-""")
-
 # KPI Metrics
 total_prev_sales = df["Ventas totales periodo anterior"].sum()
 total_curr_sales = df["Ventas totales durante la actividad"].sum()
